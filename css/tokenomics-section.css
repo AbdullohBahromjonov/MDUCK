@@ -1,0 +1,123 @@
+/* Tokenomics Section */
+.tokenomics-section {
+    background-color: var(--primary-yellow);
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.tokenomics-container {
+    background-color: #FFFFFF;
+    border: 5px solid var(--border-color);
+    border-radius: 20px;
+    padding: 20px 50px;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 8px 8px 0px var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.tokenomics-content {
+    flex: 1;
+}
+
+.tokenomics-content h2 {
+    font-family: var(--font-main);
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.tokenomics-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tokenomics-item {
+    font-family: var(--font-main);
+    font-size: 1.3rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+.tokenomics-item strong {
+    color: var(--text-color);
+}
+
+.token-address {
+    font-size: 1.1rem;
+    word-break: break-all;
+    margin-top: 5px;
+}
+
+.tokenomics-image {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tokenomics-image img {
+    max-width: 280px;
+    height: auto;
+    display: block;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsive Tokenomics Section */
+@media (max-width: 750px) {
+    .tokenomics-container {
+        text-align: left;
+        padding: 30px 25px;
+    }
+
+    .tokenomics-content h2 {
+        font-size: 2rem;
+    }
+
+    .tokenomics-item {
+        font-size: 1rem;
+    }
+
+    .tokenomics-image img {
+        max-width: 170px;
+    }
+}
+
+@media (max-width: 500px) {
+    .tokenomics-container {
+        flex-direction: column;
+    }
+
+    .tokenomics-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .tokenomics-item {
+        font-size: 1rem;
+    }
+
+    .token-address {
+        font-size: 0.9rem;
+    }
+}
